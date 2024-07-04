@@ -10,7 +10,8 @@ The eBPF program and maps are managed in Go using github.com/cilium/ebpf.
 ```console
 mkdir ./bin
 gcc -o ./bin/server server.c
-./server &
+./bin/server &
+PID 13201 waiting for connections...
 # verify the server is running: 
 ncat 127.0.0.1 12345
 .^C
